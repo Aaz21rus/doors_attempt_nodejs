@@ -1,0 +1,41 @@
+header.header
+
+  include ../modules/modular-window
+
+  .container
+    .head
+      a(href="index")
+        img(src="../img/logo/doorlogo.png", alt="logo").logo
+      P.contact
+        a(href="tel:+79089205353").tel +7 (908) 920-53-53
+        button.btn-phone Заказать звонок
+      a(href="basket").basket
+        span.good-num 2
+        | товара
+        br
+        | на сумму
+        span.good-price 1 050 руб.
+  .menu-bar
+    .container
+      a(href="catalog")
+        button.catalog-btn
+          .burger
+            .line
+            .line
+            .line
+          p.catalog-text Каталог товаров
+      input(type="search", name="search", placeholder="Поиск по каталогу").search
+      nav.menu
+        ul.menu-list
+          li.item
+            a(href="#").item-btn Установка
+          li.item
+            a(href="#").item-btn Контакты
+          li.item
+            a(href="company ").item-btn О компании
+          li.item
+            a(href="#").item-btn Оптовикам
+          li.item
+            a(href="#").item-btn Гарантия
+          li.item
+            a(href="#").item-btn Доставка и оплата

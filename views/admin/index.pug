@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
+  
+  body
+    div.container
+      h1 Add new product
+      form(action="/api/product/add" method="POST")
+        div.form-group
+          label Title
+          input.form-control(type="text" name="title" value="1")
+
+        div.form-group
+          label Vendor Code
+          input.form-control(type="text" name="vendorCode" value="2")
+
+        div.form-group
+          label Price
+          input.form-control(type="number" name="price" value="3")
+
+        div.form-group
+          label Price All
+          input.form-control(type="number" name="priceAll" value="4")
+
+        div.form-group
+          label Manufacturer
+          input.form-control(type="text" name="manufacturer" value="5")
+
+        div.form-group
+          label Material
+          input.form-control(type="text" name="material" value="6")
+
+        div.form-group
+          label Appearance
+          input.form-control(type="text" name="appearance" value="7")
+
+        div.form-group
+          label Glass
+          input.form-control(type="text" name="glass" value="8") 
+
+        div.form-group
+          label Thickness
+          input.form-control(type="number" name="thickness" value="9") 
+
+        div.form-group
+          label Count In Package
+          input.form-control(type="number" name="countInPackage" value="10") 
+        
+        div.form-group
+          label Select product image
+          input.form-control-file(type="file")
+        
+        button.btn.btn-primary Create Product   
+        
+  script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+  script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
+  script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous")
