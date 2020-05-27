@@ -26,12 +26,12 @@ html(lang="ru")
     link(rel="stylesheet", href="css/style.css")
   body.page-main
 
-    include ../modules/header
+    include ./modules/header
 
     main.main
       .container
 
-        include ../modules/sidebar
+        include ./modules/sidebar
 
         section.main-section
           .slider
@@ -58,7 +58,7 @@ html(lang="ru")
                   each b in link[num]
                     a(href="#").doorLink=b
 
-    include ../modules/footer
+    include ./modules/footer
 
 
 

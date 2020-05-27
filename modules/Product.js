@@ -13,6 +13,7 @@ module.exports = mongoose.model('Product', new Schema({
   appearance: String,
   glass: String,
   thickness: String,
-  countInPackage: String
+  countInPackage: String,
+  image: String
 }))
 

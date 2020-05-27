@@ -11,8 +11,9 @@ module.exports = {
     admin: './js/admin',
   },
   output: {
-    path: __dirname.split('\\').slice(0, -1).join('\\') + '\\public\\js',    
-    // path: __dirname + 'public\\js',    
+    // path: __dirname.split('\\').slice(0, -1).join('\\') + '\\public\\js',
+    path: __dirname.split('/').slice(0, -1).join('/') + '/public/js',
+    // path: __dirname + 'public\\js',
     filename: '[name].js'
   },
   watch: true,

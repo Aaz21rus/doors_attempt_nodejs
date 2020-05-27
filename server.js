@@ -1,7 +1,9 @@
 const express = require('express')
+const os = require('os')
 const app = express()
 const router = express.Router()
 const bodyParser = require('body-parser')
+const formData = require('express-form-data')
 
 const mongoose = require('mongoose');
 
@@ -11,7 +13,13 @@ const db = mongoose.connection
 
 
 app.set('view engine', 'pug')
+
 app.use(bodyParser())
+app.use(formData.parse({
+  uploadDir: os.tmpdir(),
+  autoClean: true
+}))
+
 app.use(express.static('public'))
 
 
