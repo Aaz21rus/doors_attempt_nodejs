@@ -22,6 +22,8 @@ app.use(formData.parse({
 
 app.use(express.static('public'))
 
+app.use(express.static('storage'))
+
 
 app.use('/', require('./routes/static'))
 app.use('/api', require('./routes/api'))

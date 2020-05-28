@@ -15,7 +15,7 @@ $('.upload-product').submit(e => {
   $('.upload-product [name]').each((_, field) => {
     if(!field.value) {
       $('.upload-product .alert-danger').show()
-      notAllfield = true
+      notAllField = true
     }
     body.append(field.name, field.value)
   })
@@ -23,7 +23,7 @@ $('.upload-product').submit(e => {
   let reader = new FileReader()
   reader.onload = e => {
     body.append('imageExt', fileExt)
-    body.append('imageDats', e.target.result)
+    body.append('imageData', e.target.result)
     fetch('/api/product/add', { method: 'POST', body })
     .then(res => res.json())
     .then(res => {

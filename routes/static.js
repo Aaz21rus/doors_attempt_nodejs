@@ -4,11 +4,12 @@ const Product = require('../modules/Product')
 
 //Public routes
 router.get('/', (req, res) => {
-  Product.find({ title: '1' }, (err, docs) => {
-    if (err) throw err
-    res.render('public/main', { tempSrc: '/storage/product/' + docs[0].image })
-  })
-  // res.render('public/main')
+  // Product.find({ title: '1' }, (err, docs) => {
+  //   if (err) throw err
+  //   console.log(123);
+  //   res.render('public/main', { tempSrc: '/storage/product/' + docs[0].image })
+  // })
+  res.render('public/main')
 })
 router.get('/catalog', (req, res) => res.render('public/catalog'))
 router.get('/card', (req, res) => res.render('public/card'))
