@@ -86,7 +86,8 @@ ul {
   background-color: #38393e;
   display: flex;
   justify-content: center;
-  margin-right: 44px; }
+  margin-right: 44px;
+  align-items: center; }
   .catalog-btn .burger {
     display: flex;
     flex-direction: column;
