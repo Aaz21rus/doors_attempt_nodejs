@@ -15,6 +15,11 @@ header.header
         br
         | на сумму
         span.good-price 1 050 руб.
+        if isLogged
+          a(href="/admin") Админ
+          a(href="/logout") Выйти
+        else 
+          a(href="/login") Вoйти
   .menu-bar
     .container
       a(href="catalog")
