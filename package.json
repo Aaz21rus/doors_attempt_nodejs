@@ -6,6 +6,7 @@
   "scripts": {
     "mongo-mac": "mongod",
     "test": "echo \"Error: no test specified\" && exit 1",
+    // "server": "nodemon server.js",
     "server": "nodemon server.js"
   },
   "author": "",
